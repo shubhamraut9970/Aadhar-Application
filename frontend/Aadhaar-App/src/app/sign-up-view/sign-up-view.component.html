@@ -1,0 +1,100 @@
+<div class="main conatiner">
+  <div class="container3 b">
+    <h3>Welcome to Signup page</h3>
+
+    <div class="Persnol details">
+    <br>  <form [formGroup]="Aadhaarform" (ngSubmit)="Onsubmit()">
+        <br>
+        <label for="AN"><b>Aadhaar Number : </b></label>
+        <input type="number" placeholder="Enter Aadhaar Number " name="AN" formControlName="aadharnumber" required
+          maxlength="12" />
+
+        <br /><label for="FN"><b>Full Name : </b></label>
+        <input type="text" name="FN" formControlName="fullname" required />
+
+        <br /><label for="FatherName"><b>Father Name : </b></label>
+        <input type="text" name="FatherName" formControlName="fathername" />
+
+        <br /><label for="YOB"><b>Year Of Birth : </b></label>
+        <input type="date" name="YOB" placeholder="dd-mm-yyyy" value="" min="1950-01-01" max="2025-12-31"
+          formControlName="yob" required />
+
+        <br /><label for="Sex"><b>Sex : </b></label><input type="radio" name="sex" value="male" formControlName="sex" />
+        Male <input type="radio" name="sex" value="female" /> Female
+
+        <br /><label for="Add"><b>Address : </b></label>
+        <input type="address" name="Add" formControlName="add" required />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container4 b">
+    <div class="information">
+      <br />
+      <br />
+      <p>
+        <b>Usage of Aadhaar</b>
+      </p>
+
+      <div class="para1">
+        Government of India funds a number of social welfare schemes focused
+        towards the poor and most vulnerable sections of society. Aadhaar and
+        its platform offer a unique opportunity to the government to streamline
+        their welfare delivery mechanism and thereby ensuring transparency and
+        good governance.
+      </div>
+
+      <b>For Governments, Service Agencies</b>
+      <br />
+      <div class="para2">
+        The UIDAI issues Aadhaar number to residents only after de-duplicating
+        their demographic and biometric attributes against its entire database.
+        Aadhaar authentication enables elimination of duplicates under various
+        schemes and is expected to generate substantial savings to the
+        government exchequer. It also provides the government with accurate data
+        on beneficiaries, enables direct benefit programs, and allows the
+        government departments/service providers to coordinate and optimize
+        various schemes. Aadhaar will enable implementing agencies to verify
+        beneficiaries and ensure targeted delivery of benefits.<b>
+          All these activities will lead to:</b>
+      </div>
+
+      <b>Curbing Leakages through Targeted Delivery:</b>
+      <div class="para3">
+        Welfare programs where beneficiaries are required to be confirmed before
+        the service delivery, stand to benefit from UIDAI’s authentication
+        services. This will result in curbing leakages and ensuring that
+        services are delivered to the intended beneficiaries only. Examples
+        include subsidized food and kerosene delivery to Public Distribution
+        System (PDS) beneficiaries, worksite attendance of Mahatma Gandhi
+        National Rural Employment Guarantee Scheme (MGNREGS) beneficiaries, etc.
+      </div>
+
+      <br />
+      <b>Improving Efficiency and Efficacy:</b>
+      <div class="para4">
+        With the Aadhaar platform providing accurate and transparent information
+        about the service delivery mechanism, government can improve
+        disbursement systems and utilize scarce development funds more
+        effectively and efficiently including better human resource utilisation
+        involved in the service delivery network.
+      </div>
+
+      <br /><b>For Residents</b>
+      <div class="para5">
+        Aadhaar system provides single source offline/online identity
+        verification across the country for the residents. Once residents enrol,
+        they can use the Aadhaar number to authenticate and establish their
+        identity multiple times using electronic means or through offline
+        verification, as the case may be. It eliminates the hassle of repeatedly
+        providing supporting identity documents each time a resident wishes to
+        access services, benefits and subsidies. By providing a portable proof
+        of identity that can be verified through Aadhaar authentication on-line
+        anytime, anywhere, the Aadhaar system enables mobility to millions of
+        people who migrate from one part of the country to another.
+      </div>
+    </div>
+  </div>
+</div>

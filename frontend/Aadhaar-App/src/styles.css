@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html {
+    height: 120%;
+  }
+  .b {
+    border: 1px solid black;
+  }
+  
+  .h {
+    height: 100%;
+  }
+  body {
+  
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+  }
+
+  
+  .container1 {
+    display: flex;
+    height: 5%;
+    align-items: center;
+    flex-direction: row;
+    background-color: lightgrey;
+    
+  }
+  
+  .Menu {
+    text-align: center;
+    font: bold;
+  }
+  .Menu ul {
+    display: inline-flex;
+    list-style: none;
+    flex: 40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+  }
+  .Menu ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+  }
+  .Menu ul li:hover {
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  .container2 {
+    display: flex;
+    height: 13%;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .image1 {
+    flex: 30;
+  }
+  
+  .namebar {
+    flex: 40;
+    color: red;
+  }
+  
+  .image2 {
+    flex: 5;
+  }
+  
+  .container3 {
+    display: flex;
+    font-family: Comic Sans MS;
+    display: flex;
+    height: 100%;
+  }
+  
+  .passd {
+    margin: 8px 0;
+    display: inline-block;
+  }
+  
+  
+  .container4 {
+    display: flex;
+    height: 80%;
+    font-family: Comic Sans MS;
+  }
+  
+  .para1 {
+    color: darkred;
+  }
+  
+  .para2 {
+    color: darkred;
+  }
+  
+  .para3 {
+    color: darkred;
+  }
+  
+  .para4 {
+    color: darkred;
+  }
+  
+  .para5 {
+    color: darkred;
+  }
+  
+  

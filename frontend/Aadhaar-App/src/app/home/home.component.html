@@ -1,0 +1,34 @@
+<h1>List of Users in Database</h1>
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">aadharnumber</th>
+      <th scope="col">Full Name</th>
+      <th scope="col">Father Name</th>
+      <th scope="col">Year Of birth</th>
+      <th scope="col">Sex</th>
+      <th scope="col">Address</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of AadharData">
+      <th>{{user.aadharnumber}}</th>
+      <th>{{user.fullname}}</th>
+      <th>{{user.fathername}}</th>
+      <th>{{user.yob}}</th>
+      <th>{{user.sex}}</th>
+      <th>{{user.add}}</th>
+
+      <th>
+        <button class="btn btn-primary btn-sm" (click)="delete(user.id)">
+          Delete
+        </button>
+        <button class="btn btn-primary btn-sm" (click)="edit(user)">
+          Edit
+        </button>
+      </th>
+    </tr>
+
+  </tbody>
+</table>
