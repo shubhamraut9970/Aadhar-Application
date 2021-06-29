@@ -12,14 +12,6 @@ export class AadharService {
 
   users = [];
 
-//   onCreateUser(unmae: any){
-// this.users.push({
-//   name:uname.value
-// });
-
-//   }
-
-
 
   signup(data: any) {
     const createurl = this.url + '/create';
@@ -30,21 +22,20 @@ export class AadharService {
     const createurl = this.url + '/';
     return this.http.get(createurl);
   }
+
   getById(id:any) {
     const read = this.url + '/read/'+id;
     return this.http.get(read);
   }
+
   delete(id: string) {
     const deleteurl = this.url + '/delete/' + id;
     return this.http.delete(deleteurl);
   }
+
   edit(id: string,data:any) {
     const editurl = this.url + '/update/' + id;
     return this.http.put(editurl,data);
   }
 }
-  // update(id:string){
-  //   const updateurl = this.url + '/update/:id'+id;
-  //   return this.http.put(updateurl);
-  // }
-
+ 
